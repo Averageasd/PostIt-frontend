@@ -3,6 +3,7 @@ import {getFormElements} from "../helper/formDataParser.js";
 
 export async function allPosts() {
     try {
+        console.log(baseUrl);
         const posts = await fetch(`${baseUrl}/posts/viewAll`);
         const postsRes = await posts.json();
         return postsRes.posts;

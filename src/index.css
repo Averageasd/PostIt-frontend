@@ -246,8 +246,14 @@ main {
     border-width: 1px 1px 0 1px;
 }
 
+@media screen and (min-width: 500px) and (max-width: 1199px){
+    .signup-login-section{
+        margin: 0 auto;
+    }
+}
+
 @media screen and (min-width: 1200px) {
-    .section {
+    .section{
         margin: 0 auto;
     }
 }
