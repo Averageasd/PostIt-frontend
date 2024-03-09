@@ -3,6 +3,8 @@ import {getFormElements} from "../helper/formDataParser.js";
 
 export async function allPosts() {
     try {
+        const env = import.meta.env;
+        console.log(env.VITE_BASE_URL);
         console.log(baseUrl);
         const posts = await fetch(`${baseUrl}/posts/viewAll`);
         const postsRes = await posts.json();

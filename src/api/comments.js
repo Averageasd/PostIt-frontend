@@ -1,10 +1,10 @@
 import {baseUrl} from "../apiConstants.js";
 import {getFormElements} from "../helper/formDataParser.js";
 
-const env = import.meta.env;
-console.log(env.BASE_URL);
+
 export async function createComment(data, postId) {
     try {
+
         const token = localStorage.getItem('token');
         const newComment = await fetch(`${baseUrl}/comments/create/${postId}`,
             {
